@@ -24,6 +24,7 @@
 <meta content="https://nâr.com/images/nar-arabic-logo-transparent.png" name="twitter:image"/>
 <link href="favicon.ico" rel="icon" type="image/x-icon"/>
 <link href="css/styles.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Montserrat:wght@300;400;600;700&amp;family=Space+Mono:wght@300;400;700&amp;family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&amp;family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&amp;display=swap" rel="stylesheet"/>
@@ -61,18 +62,25 @@
 <!-- Shared Background Wrapper for Hero and Quick Facts -->
 <div class="hero-wrapper" style="position: relative; overflow: hidden; min-height: calc(100vh + 50vh);">
 <!-- Shared Parallax Background -->
-<div class="shared-parallax-bg parallax-bg" data-speed="0.5" style="position: absolute; top: 0; left: 0; right: 0; height: 100%; background-size: cover; background-position: center 30%; background-repeat: no-repeat; z-index: -1; background-image: url('images/le-dark-lab-concert-nar-1.jpg');"></div>
+<div class="shared-parallax-bg parallax-bg" data-speed="0.5" style="position: absolute; top: 0; left: 0; right: 0; height: 100%; background-size: cover; background-position: center 30%; background-repeat: no-repeat; z-index: -1; background-image: url('/css/styles.css');"></div>
 </div>
 <!-- Hero Section -->
 <section class="hero" style="height: 100vh;">
-<div class="overlay"></div>
-<div class="hero-content">
-<img alt="NÂR" class="arabic-logo" src="images/nar-arabic-logo-transparent.png"/>
-<p class="hero-subtitle">Industrial / Hybrid Trance / Improvised Electronics</p>
-</div>
+ <div class="overlay"></div>
+ <div class="hero-content">
+  <img alt="NÂR" class="arabic-logo" src="/assets/images/nar-arabic-logo-transparent.png" data-aos="fade-down" data-aos-duration="1000" />
+  <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">NÂR</h1>
+  <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1200">
+   Industrial / Hybrid Trance / Improvised Electronics
+  </p>
+ </div>
 </section>
 <!-- Quick Facts Section -->
-<section class="quick-facts content-section" style="background-color: transparent;">
+<section class="quick-facts content-section"
+data-aos="fade-in" 
+data-aos-delay="700" 
+data-aos-duration="1200"
+style="background-color: transparent;">
 <div class="container">
 <h2 class="text-center mb-3">About</h2>
 <div class="fact-grid">
@@ -111,18 +119,19 @@
 <!-- Remaining Content -->
 <div class="content" id="main-content">
 <!-- Biography Section -->
-<section class="biography" id="bio">
-<div class="container">
-<div class="grid">
-<div class="bio-content">
-<h2>Biography</h2>
-<p>NÂR is a Lebanese multi-instrumentalist, composer, and performer based in Beirut. <span class="highlight">Constantly in metamorphosis</span>, she crafts raw, immersive experiences using analog gear, voice, and found objects. Abrasive and hypnotic, her performances are live experiments constructed from scratch—anchored in repetition and trance.</p>
-<p>Her sound draws from a vast spectrum of influences: Middle Eastern microtonality, North African trance traditions, industrial music, and avant-garde electronic forms. In 2021, NÂR created a custom instrument from repurposed clocks and bells, which injected even more grit and physicality into her sonic rituals.</p>
-<p>She describes her practice as: <span class="highlight">"A succession of sacred mistakes and a cult to the unknown."</span></p>
-</div>
-<div class="bio-image" style="background-image: url('images/le-dark-lab-concert-nar-18.jpg');"></div>
-</div>
-</div>
+<section class="biography content-section" id="bio"
+         data-aos="fade-up"
+         data-aos-delay="200"
+         data-aos-duration="1200">
+  <div class="container grid">
+    <div class="bio-content">
+      <h2>Biography</h2>
+      <p>NÂR is a Lebanese multi-instrumentalist, composer, and performer based in Beirut. <span class="highlight">Constantly in metamorphosis</span>, she crafts raw, immersive experiences using analog gear, voice, and found objects. Abrasive and hypnotic, her performances are live experiments constructed from scratch—anchored in repetition and trance.</p>
+      <p>Her sound draws from a vast spectrum of influences: Middle Eastern microtonality, North African trance traditions, industrial music, and avant-garde electronic forms. In 2021, NÂR created a custom instrument from repurposed clocks and bells, which injected even more grit and physicality into her sonic rituals.</p>
+      <p>She describes her practice as: <span class="highlight">"A succession of sacred mistakes and a cult to the unknown."</span></p>
+    </div>
+    <div class="bio-image" style="background-image: url('/assets/images/le-dark-lab-concert-nar-18.jpg');"></div>
+  </div>
 </section>
 <!-- Press Section -->
 <section>
@@ -228,7 +237,7 @@
 <div class="container">
 <h2>Past Shows</h2>
 <div class="past-shows-list">
-<h3 class="year-header">2025 <span class="toggle-indicator">-</span></h3>
+<h3 class="year-header" data-year="2025">2025 <span class="toggle-indicator">-</span></h3>
 <ul class="show-list" data-year="2025">
 <li>31.01/08.02 - Jury Labo at 47th Clermont-Ferrand International Short Film Festival</li>
 <li>05.02 - Performance - Lieu Dit for Clermont-Ferrand International Short Film Festival</li>
@@ -246,7 +255,7 @@
 <li>05.04 - Irtijal Festival 25th Edition - Beirut - LB</li>
 <li>10.04 - Paper planes &amp; Heavy hearts exhibition - Zico House - Beirut - LB</li>
 </ul>
-<h3 class="year-header">2024 <span class="toggle-indicator">+</span></h3>
+<h3 class="year-header" data-year="2024">2024 <span class="toggle-indicator">+</span></h3>
 <ul class="show-list" data-year="2024" style="display: none;">
 <li>02.02 - Grime and punishment - Mkalles Warehouse - Beirut - LB</li>
 <li>23.02 - Futura Resistenza - Rotterdam - NL</li>
@@ -300,7 +309,7 @@
 <li>09.11 - Delicalisten - Casa Banchel - Madrid - ES</li>
 <li>10.11 - RKC Vevey - CH</li>
 </ul>
-<h3 class="year-header">2023 <span class="toggle-indicator">+</span></h3>
+<h3 class="year-header" data-year="2023">2023 <span class="toggle-indicator">+</span></h3>
 <ul class="show-list" data-year="2023" style="display: none;">
 <li>06.01 - Point11 - Sion - CH</li>
 <li>07.01 - La tour Vagabonde - Lugano - CH</li>
@@ -342,7 +351,7 @@
 <li>08.12 - L'écurie - Genève - CH</li>
 <li>29.12 - Frequent Defect - Beirut - LB</li>
 </ul>
-<h3 class="year-header">2022 <span class="toggle-indicator">+</span></h3>
+<h3 class="year-header" data-year="2022">2022 <span class="toggle-indicator">+</span></h3>
 <ul class="show-list" data-year="2022" style="display: none;">
 <li>03.02 - Faraway Festival - Reims - FR</li>
 <li>04.02 - UN PEU - Bruxelles - BE</li>
@@ -379,7 +388,7 @@
 <li>28.12 - Hibernatus Festival - ABC - La chaux de fonds - CH</li>
 <li>30.12 - Urgence Disk - L'usine - Geneva - CH</li>
 </ul>
-<h3 class="year-header">2021 <span class="toggle-indicator">+</span></h3>
+<h3 class="year-header" data-year="2021">2021 <span class="toggle-indicator">+</span></h3>
 <ul class="show-list" data-year="2021" style="display: none;">
 <li>11.09 - Fri Art -Kunsthalle - CH</li>
 <li>27.08 - Nox Orae Festival - La tour de peilz - CH</li>
@@ -400,7 +409,7 @@
 <li>18.12 - Cluster - Lyon - FR</li>
 <li>28.12 - Riwaq - Beirut- LB</li>
 </ul>
-<h3 class="year-header">2020 <span class="toggle-indicator">+</span></h3>
+<h3 class="year-header" data-year="2020">2020 <span class="toggle-indicator">+</span></h3>
 <ul class="show-list" data-year="2020" style="display: none;">
 <li>18.01 - Frequent defect - Mkalles Warehouse - Beirut - LB</li>
 <li>29.02 - Beirut and Beyond Festival - Internationale - Beirut - LB</li>
@@ -408,7 +417,7 @@
 <li>01.11 - Irtijal festival - Zoukak theater - Beirut - LB</li>
 <li>04.12 - Face Z Festival NÂR feat Why the eye? - Geneva - CH</li>
 </ul>
-<h3 class="year-header">2019 <span class="toggle-indicator">+</span></h3>
+<h3 class="year-header" data-year="2019">2019 <span class="toggle-indicator">+</span></h3>
 <ul class="show-list" data-year="2019" style="display: none;">
 <li>10.01 - Kill Me Fest - Bar King - Neuchâtel - CH</li>
 <li>01.02 - Le bout du monde - Vevey - CH</li>
@@ -437,7 +446,7 @@
 <li>05.12 - la tour vagabonde - fribourg - CH</li>
 <li>29.12 - ABC - la chaux de fonds - CH</li>
 </ul>
-<h3 class="year-header">2018 <span class="toggle-indicator">+</span></h3>
+<h3 class="year-header" data-year="2018">2018 <span class="toggle-indicator">+</span></h3>
 <ul class="show-list" data-year="2018" style="display: none;">
 <li>14.01 - Europalia - Ancienne Belgique - Senyawa opening -Bruxelles (BE)</li>
 <li>28.01 - Labo Cube - Bruxelles - BE</li>
@@ -453,7 +462,7 @@
 <li>11.11 - FrequenSeas Festival - Bruxelles - CH</li>
 <li>26.12 - Demo bar - Beirut - LB</li>
 </ul>
-<h3 class="year-header">2017 <span class="toggle-indicator">+</span></h3>
+<h3 class="year-header" data-year="2017">2017 <span class="toggle-indicator">+</span></h3>
 <ul class="show-list" data-year="2017" style="display: none;">
 <li>04.03 - magasin 4 - BE</li>
 <li>26.05 - la Zone - Liège - BE</li>
@@ -645,5 +654,9 @@
 </div>
 </div>
 <script src="js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
